@@ -9,3 +9,6 @@ ctrl + z
 quit()
 或
 exit()
+
+## 列出虚拟环境中所安装的依赖
+pip list --local
