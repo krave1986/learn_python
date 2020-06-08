@@ -33,3 +33,9 @@ https://pip.pypa.io/en/stable/
 不过真正要找到 pip install 的 flag ，
 还要去看 pip install 的参考页面：
 https://pip.pypa.io/en/stable/reference/pip_install/
+
+## black的缩进方式
+black使用，且只使用 4个空格 的缩进方式。
+所以，你在使用vscode的时候，需要勾选 editor.insertSpaces 选项。
+不然你按tab的时候，会真实地插入一个 tab ，
+而你的其它代码可能已经被 black 改成4个空格，如此，缩进对不上，就会导致看不见原因的报错。
