@@ -39,3 +39,12 @@ black使用，且只使用 4个空格 的缩进方式。
 所以，你在使用vscode的时候，需要勾选 editor.insertSpaces 选项。
 不然你按tab的时候，会真实地插入一个 tab ，
 而你的其它代码可能已经被 black 改成4个空格，如此，缩进对不上，就会导致看不见原因的报错。
+
+但是，因为我这边同时要写 js 代码 和 python 。
+在 js 测，使用 Prettier ，已经实现了代码的 tab 缩进。
+如果又要写 python 的话，那么 editor.insertSpaces 选项就要频繁切换。
+目前的一个解决方式是，依赖选项：editor.detectIndentation 来自动进行切换。
+
+目前来看的话，这个选项还是相对可靠的。
+
+
